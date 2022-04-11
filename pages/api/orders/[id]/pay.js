@@ -1,12 +1,10 @@
 import nc from "next-connect"
 import Order from "../../../../model/Order"
 import db from '../../../../Utils/db'
-import onError from '../../../../Utils/error'
+import { onError } from '../../../../Utils/error'
 import { isAuth } from '../../../../Utils/auth'
 
-const handler = nc({
-    onError
-})
+const handler = nc({onError})
 handler.use(isAuth)
 handler.put(async (req, res) => {
     await db.connect()
