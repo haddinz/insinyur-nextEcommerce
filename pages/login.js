@@ -9,7 +9,7 @@ import { useRouter } from 'next/router'
 import Cookies from 'js-cookie'
 import { Controller, useForm } from 'react-hook-form'
 import { useSnackbar } from 'notistack'
-import { getError } from '../utils/error'
+import { getError } from '../Utils/error'
 
 export default function Login() {
     const { handleSubmit, control, formState: { errors } } = useForm()
