@@ -6,7 +6,7 @@ import { Layout } from "../../Components/Layout"
 import { Button, Card, CardActions, CardContent, CircularProgress, Grid, List, ListItem, ListItemText, Typography } from "@material-ui/core"
 import useStyles from "../../Utils/Style"
 import NextLink from 'next/link'
-import { getError } from '../../utils/error';
+import { getError } from '../../Utils/error';
 import axios from "axios"
 import { Bar } from 'react-chartjs-2'
 import {

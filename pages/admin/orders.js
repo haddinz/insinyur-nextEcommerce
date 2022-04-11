@@ -6,7 +6,7 @@ import { Layout } from "../../Components/Layout"
 import { Button, Card, CircularProgress, Grid, List, ListItem, ListItemText, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from "@material-ui/core"
 import useStyles from "../../Utils/Style"
 import NextLink from 'next/link'
-import { getError } from '../../utils/error';
+import { getError } from '../../Utils/error';
 import axios from "axios"
 
 function reducer(state, action) {

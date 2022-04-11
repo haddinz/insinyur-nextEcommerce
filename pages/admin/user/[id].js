@@ -6,7 +6,7 @@ import { Layout } from "../../../Components/Layout"
 import { Button, Card, Checkbox, CircularProgress, FormControlLabel, Grid, List, ListItem, ListItemText, TextField, Typography } from "@material-ui/core"
 import useStyles from "../../../Utils/Style"
 import NextLink from 'next/link'
-import { getError } from '../../../utils/error';
+import { getError } from '../../../Utils/error';
 import axios from "axios"
 import { Controller, useForm } from "react-hook-form"
 import { useSnackbar } from "notistack"
