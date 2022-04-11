@@ -120,7 +120,7 @@ function PlaceOrder() {
                                         </TableHead>
                                         <TableBody>
                                             {cartItems.map((item) => (
-                                                <TableRow>
+                                                <TableRow key={item._id}>
                                                     <TableCell>
                                                         <NextLink href={`/product/${item.slug}`} passHref>
                                                             <Link>

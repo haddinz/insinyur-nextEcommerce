@@ -1,7 +1,7 @@
 import { Typography, Grid, TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Link, Card, List, ListItem, CircularProgress, Button } from '@material-ui/core'
 import NextLink from 'next/link'
 import Image from 'next/image'
-import React, { useContext, useEffect, useReducer, useState } from 'react'
+import React, { useContext, useEffect, useReducer } from 'react'
 import { Layout } from '../../Components/Layout'
 import { Store } from '../../Utils/Store'
 import dynamic from 'next/dynamic'
@@ -110,7 +110,7 @@ function Order({ params }) {
         }
     }, [order, successPay, successDeliver])
 
-    const { closeSnackbar, enqueueSnackbar } = useSnackbar()
+    const { enqueueSnackbar } = useSnackbar()
 
     function createOrder(data, actions) {
         return actions.order
@@ -236,7 +236,7 @@ function Order({ params }) {
                                             </TableHead>
                                             <TableBody>
                                                 {orderItems.map((item) => (
-                                                    <TableRow>
+                                                    <TableRow key={item._id} >
                                                         <TableCell>
                                                             <NextLink href={`/product/${item.slug}`} passHref>
                                                                 <Link>

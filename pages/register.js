@@ -1,5 +1,5 @@
 import { Button, Link, List, ListItem, TextField, Typography } from '@material-ui/core'
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { Layout } from '../Components/Layout'
 import useStyles from '../Utils/Style'
 import NextLink from 'next/link'
@@ -9,6 +9,7 @@ import { useRouter } from 'next/router'
 import Cookies from 'js-cookie'
 import { Controller, useForm } from 'react-hook-form'
 import { useSnackbar } from 'notistack'
+import { getError } from '../Utils/error'
 
 export default function Register() {
     const { handleSubmit, control, formState: { errors } } = useForm()
