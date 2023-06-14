@@ -216,3 +216,69 @@ Fetch Product From API (02:08:39) {
     connect to github
     create atlas monggo db
 }
+
+44. Review Product {
+    add review model
+    create api for reviews
+    create review form
+    show review form
+    show review and home screen
+
+    {
+        'cant read mui Theme' this happen when you vallue
+        with wrong or undifind props 
+        example : variant:'outline'
+        true
+        variant:'outlined
+    }
+
+    {
+        something wrong
+        where does createdAt come from 
+    }
+}
+
+45. Create Side bar {
+    add drawer
+    list categories
+    redirect to search screen
+}
+
+46. Create Search Box {
+    add form
+    handle form submit
+    redirect to search screen
+}
+
+47. Create Search Page {
+    create filters
+    list products
+    show filters
+
+    {
+        check the render method of Search
+
+        'Its happen because of wrong import funtion (in this case is layout i wrote import with wrong addres)' 
+
+        server side rendering error because of wrong import of layout screen. This error because impact of wrong import above
+
+        becarful for writing map funtion. You must to know what () and {}
+    }
+}
+
+48. Add Carousel {
+    create featured products
+    fedd caraousel data
+    show popular product
+}
+
+49. Choose Location on Map {
+    add google map
+    create map screen
+    choose location
+    show in order screen
+}
+
+50. Upgrade to MUai 5 version{
+    
+}
